@@ -21,7 +21,7 @@ A utility to format and display MySQL table structure with proper column alignme
 
 1. Clone the repository:
    ```
-   git clone https://github.com/garydean/mysql-display-structure.git
+   git clone https://github.com/Open-Technology-Foundation/display-structure
    cd mysql-display-structure
    ```
 

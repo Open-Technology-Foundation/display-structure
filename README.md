@@ -46,32 +46,32 @@ display-structure <database> <table>
 ### Display Multiple Tables
 
 ```
-display-structure peraturan peraturan_distinct peraturan_tahun
+display-structure mydatabase mytable my2ndtable
 ```
 
 ### Filter Specific Columns
 
 ```
-display-structure peraturan peraturan_distinct -c Field,Type,Null
+display-structure mydatabase mytable -c Field,Type,Null
 ```
 
 ### Show Table Statistics
 
 ```
-display-structure peraturan peraturan_distinct -s
+display-structure mydatabase mytable -s
 ```
 
 ### Export to JSON or CSV
 
 ```
-display-structure peraturan peraturan_distinct -f json
-display-structure peraturan peraturan_distinct -f csv -o structure.csv
+display-structure mydatabase mytable -f json
+display-structure mydatabase mytable -f csv -o structure.csv
 ```
 
 ### Pipe from MySQL
 
 ```
-mysql peraturan -e 'show columns from peraturan_distinct' | ./display-structure
+mysql mydatabase -e 'show columns from mytable' | ./display-structure
 ```
 
 ## Command Line Options

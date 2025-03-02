@@ -71,7 +71,7 @@ display-structure mydatabase mytable -f csv -o structure.csv
 ### Pipe from MySQL
 
 ```
-mysql mydatabase -e 'show columns from mytable' | ./display-structure
+mysql mydatabase -e 'show columns from mytable' | display-structure
 ```
 
 ## Command Line Options
